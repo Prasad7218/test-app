@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe"
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe"
+    },
+    {
+      "id": "ed5e",
+      "name": "prasad yerawar",
+      "email": "prasad.yerwar@cibt.com",
+      "password": "123456"
+    },
+    {
+      "id": "42e6",
+      "name": "prasad yerawar",
+      "email": "prasad.yerwar@cibt.com",
+      "password": "800000"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Custom Post",
+      "userId": 1
+    }
+  ]
+}
