@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import { useGetPostsQuery } from "../redux/apiSlice";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  const { data, error, isLoading } = useGetPostsQuery();
 
-export default About
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error fetching posts</p>;
+
+  return (
+    <ul>
+      {data.map((post) => (
+        <li key={post.id}>{post.title}</li>
+      ))}
+    </ul>
+  );
+};
+
+export default About;
